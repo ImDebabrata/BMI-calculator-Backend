@@ -12,7 +12,7 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 app.get("/", (req, res) => {
-  res.send("Welcome to the todo app server");
+  res.send({ res: "Welcome to the BMI server" });
 });
 
 app.use("/login", loginRouter);
